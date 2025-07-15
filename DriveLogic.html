@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DriveLogic Consulting</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('Drivelogic.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 24px;
+      color: #212121;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .header-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .header-buttons a {
+      text-decoration: none;
+    }
+
+    .header-buttons button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .header-buttons button:hover {
+      background-color: #444;
+    }
+
+    .summary {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 20px;
+      line-height: 1.6;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .services-section {
+      margin-top: 80px;
+    }
+
+    .services-header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-box h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #222;
+    }
+
+    .service-box p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* ✅ Responsive typography and layout */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .summary {
+        font-size: 1rem;
+        padding: 15px;
+      }
+
+      .services-header {
+        font-size: 1.5rem;
+      }
+
+      .header-buttons {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .logo span {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        flex-direction: column;
+      }
+
+      .logo img {
+        margin: 0 0 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="logo.png" alt="DriveLogic Logo" />
+    <span>DriveLogic</span>
+  </div>
+
+  <header>
+    <h1>DriveLogic</h1>
+    <div class="header-buttons">
+      <a href="https://calendly.com/antwoine-bennett" target="_blank" rel="noopener noreferrer">
+        <button>Schedule Here</button>
+      </a>
+      <button onclick="alert('To be added soon')">Shops</button>
+    </div>
+    <div class="summary">
+      DriveLogic is a vehicle consulting business that provides expert advice and guidance to individuals, businesses, and organizations on all aspects of vehicle ownership, management, and maintenance. Our mission is to help clients make informed decisions about their vehicles, optimize their fleets, and reduce costs. With a focus on analytical expertise, technical knowledge, and exceptional customer service, DriveLogic aims to become a trusted partner in the vehicle consulting industry.
+    </div>
+  </header>
+
+  <section class="services-section">
+    <div class="services-header">Services</div>
+    <div class="services-grid">
+      <div class="service-box">
+        <h3>Vehicle Selection and Acquisition</h3>
+        <p>Expert advice on choosing the right vehicle for personal or business use, including test drives and comparative analysis.</p>
+      </div>
+      <div class="service-box">
+        <h3>Maintenance and Repair</h3>
+        <p>Guidance on routine maintenance, repair, and troubleshooting, as well as recommendations for aftermarket parts and accessories.</p>
+      </div>
+      <div class="service-box">
+        <h3>Fleet Management</h3>
+        <p>Consulting services for businesses and organizations, including fleet optimization, fuel efficiency, and safety management.</p>
+      </div>
+      <div class="service-box">
+        <h3>Fuel Efficiency and Sustainability</h3>
+        <p>Advice on reducing fuel consumption, selecting eco-friendly vehicles, and implementing sustainable transportation practices.</p>
+      </div>
+      <div class="service-box">
+        <h3>Safety and Compliance</h3>
+        <p>Expert guidance on vehicle safety features, regulatory compliance, and risk management.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    console.log("DriveLogic site loaded successfully.");
+  </script>
+
+</body>
+</html>
+
